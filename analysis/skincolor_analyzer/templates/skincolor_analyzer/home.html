@@ -1,0 +1,11 @@
+{% extends 'skincolor_analyzer/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron mt-5">
+    <h1 class="display-4">Welcome to Skin Color Analyzer</h1>
+    <p class="lead">Upload a photo and get your skin color analyzed into one of four categories: light, pale, medium, or dark.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'upload_photo' %}" role="button">Upload a Photo</a>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'skincolor_analyzer/base.html' %}
+
+{% block title %}Photo Detail{% endblock %}
+
+{% block content %}
+<div class="card mt-5">
+    <div class="card-header">
+        <h2>Photo Detail</h2>
+    </div>
+    <div class="card-body text-center photo-display">
+        <p>Skin Category: <strong>{{ photo.skin_category }}</strong></p>
+        <img src="{{ photo.image.url }}" alt="Uploaded Photo">
+    </div>
+</div>
+{% endblock %}
